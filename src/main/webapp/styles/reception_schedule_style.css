@@ -1,0 +1,61 @@
+.header-reception_schedule {
+	padding: 20px 0;
+    font-size: 20pt;
+}
+
+.reception_schedule-information {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table-reception_schedule {
+	border-collapse: collapse;
+}
+
+.table-reception_schedule th {
+	border: 1px solid black;
+	font-size: 18pt;
+}
+
+.table-reception_schedule tr {
+	
+}
+
+.table-reception_schedule td {
+	border: 1px solid black;
+	font-size: 16pt;
+	padding: 5px;
+}
+
+td.office-post {
+	
+}
+
+td.name {
+	
+}
+
+td.office {
+	
+}
+
+td.time {
+	
+}
+
+td.phone {
+	
+}
+
+.additional-inform-to-personal-reception-of-director {
+    padding: 10px 0;
+    font-size: 13pt;
+}
+
+.book-of-comments-and-suggestions {
+	padding: 20px 0;
+}
+
+.book-of-comments-and-suggestions p {
+	font-size: 14pt;
+}

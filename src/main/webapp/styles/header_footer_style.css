@@ -1,0 +1,78 @@
+/*-----------------------------HEADER-------------------------------*/
+header {
+	min-height: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+}
+
+.logo {
+	flex: 20%;
+	border: none;
+}
+
+.legal-information {
+	align: right;
+}
+
+.legal-information p {
+	font-size: 18px;
+	padding: 5px;
+}
+
+/*------------------------------------FOOTER--------------------------------*/
+footer {
+	background-color: #eee;
+	padding: 20px;
+	min-height: 265px;
+	width: 100%;
+	display: flex;
+}
+
+.about-us {
+    padding: 0 20px;
+}
+
+.about-us p {
+	font-size: 15pt;
+}
+
+.custom-links {
+    padding: 0 20px;
+    white-space: nowrap;
+	width: 320px;
+	left: 0;
+}
+
+.custom-links a {
+    color: black;
+    font-size: 13pt;
+    text-decoration: none;
+}
+
+.custom-links a:hover {
+    color: red;
+}
+
+.contact-us {
+	font-size: 13pt;
+	white-space: nowrap;
+    padding: 0 20px;
+	width: 320px;
+	right: 0;
+}
+
+@media screen and (max-width: 900px) {
+    footer {flex-wrap: wrap;}
+    .custom-links, .contact-us {width: 50%; left: 0; padding-top: 20px;}
+    .about-us {width: 100%; left: 0;}
+}
+@media screen and (max-width: 600px) {
+    .custom-links,
+    .about-us,
+    .contact-us {
+        width: 100%;
+        left: 0;
+        padding-top: 20px;
+    }
+}

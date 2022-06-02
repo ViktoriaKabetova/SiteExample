@@ -1,0 +1,71 @@
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #7d7d7d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+.description {
+	font-size: 16pt;
+	text-indent: 25px;
+}
+
+h3 {
+	padding: 10px 0;
+}
+
+@media screen and (max-width:720px){
+	.column.pharmacovigilance-form {width: 100%;}
+	.column.pharmacovigilance-contact-information {width: 100%;}
+}
+
+.pharmacovigilance {
+	width: 100%;
+}
+
+.column.pharmacovigilance-form {
+	margin-top: 6px;
+	padding: 20px;
+	width: 50%;
+}
+
+.column.contact-inform1 {
+	padding: 0 10px 0 0;
+	width: 50%;
+}
+
+.column.contact-inform2 {
+	padding: 0 0 0 10px;
+	width: 50%;
+}
+
+.column.pharmacovigilance-contact-information {
+	margin-top: 6px;
+	padding: 20px;
+	width: 50%;
+}
+
+.pharmacovigilance-contact-information h3 {
+	padding: 10px 0;
+	font-size: 18pt;
+}
+
+.pharmacovigilance-contact-information p {
+	font-size: 16pt;
+	text-indent: 0;
+}

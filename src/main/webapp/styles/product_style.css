@@ -1,0 +1,71 @@
+.column.product_image {
+	position: relative;
+	padding: 20px;
+	width: 30%;
+	border: solid 1px black;
+}
+
+.column.product_image img {
+	height: 300px;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product_certificate {
+	position: relative;
+	padding: 10px 20px;
+}
+
+.product_certificate img {
+	border: solid 1px black;
+	height: 400px;
+	margin-right: 10px;
+}
+
+.column.product_parameters {
+	position: relative;
+	padding: 20px;
+	width: 70%;
+}
+
+.product_description {
+	margin-top: 10px;
+	font-size: 16pt;
+}
+
+.product_description p {
+    position: relative;
+    padding: 5px 0;
+    text-indent: 25px;
+}
+
+.table-effectiveness {
+	table-layout: fixed;
+	border-collapse: collapse;
+	margin: 10px 25px;
+}
+
+.table-effectiveness td {
+	width: 50%;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.table-characteristics {
+	table-layout: fixed;
+	border-collapse: collapse;
+	margin: 10px 25px;
+}
+
+.table-characteristics th {
+	border: 1px solid black;
+	font-size: 18pt;
+}
+
+.table-characteristics td {
+	width: 50%;
+	border: 1px solid black;
+	padding: 5px;
+}

@@ -1,0 +1,42 @@
+.content h1 {
+	text-align:center;
+	padding-bottom: 20px;
+}
+
+.content h2 {
+	text-align: center;
+	font-size: 18pt;
+	padding-bottom: 10px;
+}
+
+.content h3 {
+	padding: 10px 0;
+	font-size: 16pt;
+}
+
+.content p {
+	font-size: 14pt;
+}
+
+.row-minsk-storage {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.minsk-storage-contact-information {
+	flex: 25%;
+}
+
+.minsk-storage-map-content {
+	flex: 50%;
+}
+
+.minsk-storage-operating-mode {
+	flex: 25%;
+}
+
+iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

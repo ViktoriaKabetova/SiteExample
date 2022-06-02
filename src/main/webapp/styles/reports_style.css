@@ -1,0 +1,13 @@
+.reports.content a {
+	font-size: 16pt;
+	color: black;
+	text-decoration: none;
+}
+
+.reports.content a:hover {
+	color: red;
+}
+
+h2 {
+	padding: 12px 0;
+}

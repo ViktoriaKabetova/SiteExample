@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Бобруйский завод биотехнологий</title>
+		<link rel="icon" href="../../media/favicon.png" type="image/png">
+		<link rel="stylesheet" href="../../styles/header_footer_style.css">
+		<link rel="stylesheet" href="../../styles/navbar_style.css">
+		<link rel="stylesheet" href="../../styles/main_style.css">
+		<link rel="stylesheet" href="../../styles/category_style.css">
+		<link rel="stylesheet" href="../../styles/product_style.css">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+				integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+				crossorigin="anonymous">
+		</script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../scripts/products-search.js"></script>
+	</head>
+	<body>
+<!-- ------------------------------------------- HEADER	----------------------------------------- -->
+		<header>
+			<div class="logo">
+				<a href="../../pages/index.html">
+				<img src="../../media/logo.png" style="height:120px; background-size:cover"/></a>
+			</div>
+			<div class="legal-information">
+				<p>213800, Республика Беларусь, Могилевская область, г. Бобруйск, ул. Чехова, 54</p>
+				<p>УНН 700068910, ОКПО 00479190</p>
+				<p><b>Отгрузочные реквизиты:</b></p>
+				<p>станция Бобруйск Бел. ж/д., код станции 147008, код завода 2958</p>
+			</div>
+		</header>
+<!-- ------------------------------------------- NAVBAR	----------------------------------------- -->
+		<div class="navbar" id="nav">
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/index.html';" 
+						class="dropbtn"
+						value="Главная"/>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/catalogue.html';" 
+						class="dropbtn"
+						value="Продукция"/>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/about_us.html';" 
+						class="dropbtn"
+						value="О нас"/>
+				<div class="dropdown-content">
+					<a href="../../pages/about_us.html">О предприятии</a>
+					<a href="../../pages/history.html">История</a>
+					<a href="../../pages/reports.html">Отчетность</a>
+					<a href="../../pages/news.html">Новости</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/contacts.html';" 
+						class="dropbtn"
+						value="Контакты"/>
+				<div class="dropdown-content">
+					<a href="../../pages/contacts.html">Основная информация</a>
+					<a href="../../pages/minsk_storage.html">Склад в Минске</a>
+					<a href="../../pages/phones.html">Телефоны</a>
+					<a href="../../pages/reception_schedule.html">График личного приема</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/contact_us.html';" 
+						class="dropbtn"
+						value="Связаться с нами"/>
+				<div class="dropdown-content">
+					<a href="../../pages/contact_us.html">Отправить сообщение</a>
+                    <a href="../../pages/order_form.html">Заявка на продукцию</a>
+                    <a href="../../pages/pharmacovigilance.html">Фармаконадзор</a>
+				</div>
+			</div>
+			<div class="search">
+				<select class="select2-element" id="select2-label-id"></select>
+				<input type="image" 
+						src="../../media/magnifying_glass.png" 
+						onclick="openSelected()"
+						class="searchbtn"/>
+			</div>
+		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var navbar = document.getElementById("nav");
+			var sticky = navbar.offsetTop;
+			
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+<!-- -------------------------------------------- CONTEINER	----------------------------------------- -->
+		<div class="container">
+<!-- ------------------------------------------ COLUMN LEFT-BAR	------------------------------------- -->
+			<div class="side-bar">
+				<div class="column left-bar">
+					<a href="../../catalog/category_ethanol.html">Спирт этиловый</a>
+					<a href="../../catalog/category_disinfectants.html">Средства дезинфицирующие</a>
+					<a href="../../catalog/category_antiseptic.html">Антисептические растворы</a>
+					<a href="../../catalog/category_carbon_dioxide.html">Двуокись углерода</a>
+					<a href="../../catalog/category_auto_chemicals.html">Автомобильная химия</a>
+					<a href="../../catalog/category_household_chemicals.html">Бытовая химия</a>
+					<a href="../../catalog/category_means_for_ignition.html">Средства для розжига</a>
+					<a href="../../catalog/category_lignin.html">Сорбент лигниновый</a>
+					<a href="../../catalog/category_means_for_plant_protection.html">Средства защиты растений</a>
+					<a class="active" href="../../catalog/category_veterinary_drugs.html">Ветеринарные препараты</a>
+					<a href="../../catalog/category_feed_proteins.html">Кормовые белки</a>
+					<a href="../../catalog/category_biofuel.html">Биотопливо</a>
+					<a href="../../catalog/category_export.html" class="export">Продукция на экспорт</a>
+					<div class="price-list">
+						<a href="../../documents/PRICE-LIST.docx" download>Скачать Прайс-лист</a>
+					</div>
+				</div>
+			</div>
+<!-- ------------------------------------------- COLUMN CONTENT	------------------------------------- -->
+			<div class="content">
+				<div class="row-products">
+					<div class="column product_image">
+						<img src="../../media/products/sublitsin.jpg"/>
+					</div>
+					<div class="column product_parameters">
+					</div>
+				</div>
+				<div class="product_description">
+					<h2>Ветеринарный препарат "Сублицин"</h2>
+					<p> ТУ РБ 00479190.008-2000.</p>
+					<p> Код ТН ВЭД  30 02 90 9000.</p>
+					<p> Объем производства: до 1 000 литров в месяц.</p>
+					<p> "Сублицин" – лечебно-профилактический ветеринарный препарат на основе живых микробных 
+						культур рода Bacillus (в 1 мл препарата содержится не менее 108 микробных клеток).</p>
+					<p> "Сублицин" предназначен для профилактики и лечения у молодняка сельскохозяйственных 
+						животных и птицы, пушно-меховых животных, рыб, пчел дисбактериозов различной этиологии, 
+						диареи бактериальной природы, простой и токсичнорй дисперсии и других заболеваний 
+						желудочно-кишечного тракта, способствует формированию нормальной микрофлоры 
+						желудочно-кишечного тракта, а также повышению естественнной резистенции организма.</p>
+					<p> "Сублицин" имеет вид мутной жидкости коричневого цвета различных оттенков со слабым 
+						специфическим запахом. При стоянии образуется осадок и характерная пленка на поверхности. 
+						Перед применением препарата, содержимое флакона хорошо взбалтывают и разводят 
+						остуженной кипяченой питьевой водой.</p>
+					<p> Упаковка: 400 мл.</p>
+					<p> Бактерии-пробионты, входящие в состав препарата, устойчивы к действию литических и 
+						пищеварительных ферментов, что позволяет им сохранять высокую жизнеспособность 
+						на протяжении всего желудочно-кишечного тракта. У бацилл проявляется разносторонняя 
+						биологическая активность, что обусловлено синтезом ряда биологически активных соединений – 
+						ферментов, витаминов, аминокислот (в том числе незаменимых), стимуляторов защитных реакций организма. 
+						Высокая ферментативная активность препарата обеспечивает повышенную усвояемость кормов, 
+						в том числе грубых. Наблюдается выраженный эффект общего укрепления здоровья и, как следствие, 
+						получение значительных привесов живой массы сельскохозяйственных животных.</p>
+					<p> <b>Применение:</b> перорально. При нормальном сосательном (глотательном) рефлексе 
+						сублицин выпаивают или смешивают с кормом, при затруднении выпаивания – задают с помощью 
+						аппарата Шилова, ПОС – 5, пластмассового или стеклянного шприца (без иглы) 
+						с надетой резиновой трубкой.</p>
+					<p> <b>Побочные действия отсутствуют.</b> Препарат безвреден для организма даже в концентрациях, 
+						превышающих рекомендуемые дозы.</p>
+					<p> Противопоказаний к применению препарата нет. После применения сублицина продукты животноводства, 
+						птицеводства, рыболовства и пчеловодства могут быть использованы без ограничений.</p>
+					<p> <b>Условия и срок хранения:</b> при температуре от +2&deg;С до +10&deg;С 
+						в течение 6 месяцев со дня выпуска партии.</p>
+					<p> <b>Препарат «Сублицин» имеет регистрационное свидетельство</b>, выданное «Главным управлением ветеринарии 
+						с государственной ветеринарной инспекцией» Министерства сельского хозяйства и продовольствия РБ.</p>
+					<p> При заинтересованности предприятие может предоставить более подробную информацию в виде 
+						инструкции по применению. Приобретая препарат у производителя, Вы получаете гарантированно 
+						качественный продукт белорусского производства.</p>
+					<p> Система управления окружающей средой производства Препарата «Сублицин» соответствует 
+						требованиям СТБ ИСО 14001 – 2005.</p>
+				</div>
+			</div>
+		</div>
+<!-- ----------------------------------------------- FOOTER	----------------------------------------- -->
+		<footer>
+			<div class="about-us">
+				<h2 style="text-align:center">О нас</h2>
+				<h3>Производимая продукция</h3>
+				<p> Спирт этиловый, бытовая и автомобильная химия, биотопливо, сорбент, двуокись углерода, 
+					дезинфицирующие средства, биологические консерванты силоса и кормовые добавки, 
+					ветеринарные препараты и биологические средства защиты растений</p>
+			</div>
+			<div class="custom-links">
+				<h2 style="text-align:center">Основные разделы</h2>
+				<a href="../../pages/index.html">Главная</a><br>
+				<a href="../../pages/catalogue.html">Продукция</a><br>
+				<a href="../../pages/about_us.html">О нас</a><br>
+				<a href="../../pages/history.html">История</a><br>
+				<a href="../../pages/reports.html">Отчетность</a><br>
+				<a href="../../pages/news.html">Новости</a><br>
+				<a href="../../pages/contacts.html">Контакты</a><br>
+				<a href="../../pages/minsk_storage.html">Склад в Минске</a><br>
+				<a href="../../pages/phones.html">Телефоны</a><br>
+				<a href="../../pages/reception_schedule.html">График личного приема</a><br>
+				<a href="../../pages/contact_us.html">Связаться с нами</a><br>
+                <a href="../../pages/pharmacovigilance.html">Фармаконадзор</a>
+                <a href="../../pages/order_form.html">Заявка на продукцию</a>
+			</div>
+			<div class="contact-us">
+				<h2 style="text-align:center">Связаться с нами</h2>
+				<h3>Адрес</h3>
+				<p>213800, Беларусь, Могилевская обл., <br>г. Бобруйск, ул. Чехова, д. 54</p>
+				<h3>Телефоны</h3>
+				<p>+375 (225) 71-59-38</p>
+				<p>+375 (225) 71-60-88</p>
+				<h3>Электронная почта</h3>
+				<p>gidroliz@mail.ru</p>
+			</div>
+		</footer>
+	</body>
+</html>

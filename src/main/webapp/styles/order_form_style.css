@@ -1,0 +1,68 @@
+input[type=text], textarea, .select-product {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #7d7d7d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+label {
+	font-size: 14pt;
+}
+
+h2 {
+	padding: 10px 0;
+}
+
+@media screen and (max-width:720px){
+	.column.pharmacovigilance-form {width: 100%;}
+	.column.pharmacovigilance-contact-information {width: 100%;}
+}
+
+.row-order {
+	width: 100%;
+}
+
+.row-order-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order-product {
+	flex: 33%;
+	padding: 0 20px;
+}
+
+.order-customer {
+	flex: 33%;
+	padding: 0 20px;
+}
+
+.order-address {
+	flex: 33%;
+	padding: 0 20px;
+}
+
+.column.date1 {
+	padding: 0 10px 0 0;
+	width: 50%;
+}
+
+.column.date2 {
+	padding: 0 0 0 10px;
+	width: 50%;
+}

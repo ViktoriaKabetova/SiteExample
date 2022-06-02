@@ -1,0 +1,45 @@
+.phones-information {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table-phones {
+	border-collapse: collapse;
+}
+
+.table-phones tr {
+	
+}
+
+.table-phones td {
+	border: none;
+	font-size: 16pt;
+	padding: 5px;
+}
+
+td.office-post {
+	font-size: 18pt;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+td.name {
+	
+}
+
+td.phone-mail {
+	border-right: 0;
+}
+
+td.explanation {
+	border-left: 0;
+}
+
+td.group {
+	
+}
+
+.additional-inform-to-marketing-and-sales-department {
+	
+}
+

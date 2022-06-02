@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Бобруйский завод биотехнологий</title>
+		<link rel="icon" href="../../media/favicon.png" type="image/png">
+		<link rel="stylesheet" href="../../styles/header_footer_style.css">
+		<link rel="stylesheet" href="../../styles/navbar_style.css">
+		<link rel="stylesheet" href="../../styles/main_style.css">
+		<link rel="stylesheet" href="../../styles/category_style.css">
+		<link rel="stylesheet" href="../../styles/product_style.css">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+				integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+				crossorigin="anonymous">
+		</script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../scripts/products-search.js"></script>
+	</head>
+	<body>
+<!-- ------------------------------------------- HEADER	----------------------------------------- -->
+		<header>
+			<div class="logo">
+				<a href="../../pages/index.html">
+				<img src="../../media/logo.png" style="height:120px; background-size:cover"/></a>
+			</div>
+			<div class="legal-information">
+				<p>213800, Республика Беларусь, Могилевская область, г. Бобруйск, ул. Чехова, 54</p>
+				<p>УНН 700068910, ОКПО 00479190</p>
+				<p><b>Отгрузочные реквизиты:</b></p>
+				<p>станция Бобруйск Бел. ж/д., код станции 147008, код завода 2958</p>
+			</div>
+		</header>
+<!-- ------------------------------------------- NAVBAR	----------------------------------------- -->
+		<div class="navbar" id="nav">
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/index.html';" 
+						class="dropbtn"
+						value="Главная"/>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/catalogue.html';" 
+						class="dropbtn"
+						value="Продукция"/>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/about_us.html';" 
+						class="dropbtn"
+						value="О нас"/>
+				<div class="dropdown-content">
+					<a href="../../pages/about_us.html">О предприятии</a>
+					<a href="../../pages/history.html">История</a>
+					<a href="../../pages/reports.html">Отчетность</a>
+					<a href="../../pages/news.html">Новости</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/contacts.html';" 
+						class="dropbtn"
+						value="Контакты"/>
+				<div class="dropdown-content">
+					<a href="../../pages/contacts.html">Основная информация</a>
+					<a href="../../pages/minsk_storage.html">Склад в Минске</a>
+					<a href="../../pages/phones.html">Телефоны</a>
+					<a href="../../pages/reception_schedule.html">График личного приема</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/contact_us.html';" 
+						class="dropbtn"
+						value="Связаться с нами"/>
+				<div class="dropdown-content">
+					<a href="../../pages/contact_us.html">Отправить сообщение</a>
+                    <a href="../../pages/order_form.html">Заявка на продукцию</a>
+                    <a href="../../pages/pharmacovigilance.html">Фармаконадзор</a>
+				</div>
+			</div>
+			<div class="search">
+				<select class="select2-element" id="select2-label-id"></select>
+				<input type="image" 
+						src="../../media/magnifying_glass.png" 
+						onclick="openSelected()"
+						class="searchbtn"/>
+			</div>
+		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var navbar = document.getElementById("nav");
+			var sticky = navbar.offsetTop;
+			
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+<!-- -------------------------------------------- CONTEINER	----------------------------------------- -->
+		<div class="container">
+<!-- ------------------------------------------ COLUMN LEFT-BAR	------------------------------------- -->
+			<div class="side-bar">
+				<div class="column left-bar">
+					<a href="../../catalog/category_ethanol.html">Спирт этиловый</a>
+					<a href="../../catalog/category_disinfectants.html">Средства дезинфицирующие</a>
+					<a href="../../catalog/category_antiseptic.html">Антисептические растворы</a>
+					<a href="../../catalog/category_carbon_dioxide.html">Двуокись углерода</a>
+					<a href="../../catalog/category_auto_chemicals.html">Автомобильная химия</a>
+					<a href="../../catalog/category_household_chemicals.html">Бытовая химия</a>
+					<a href="../../catalog/category_means_for_ignition.html">Средства для розжига</a>
+					<a href="../../catalog/category_lignin.html">Сорбент лигниновый</a>
+					<a href="../../catalog/category_means_for_plant_protection.html">Средства защиты растений</a>
+					<a href="../../catalog/category_veterinary_drugs.html">Ветеринарные препараты</a>
+					<a class="active" href="../../catalog/category_feed_proteins.html">Кормовые белки</a>
+					<a href="../../catalog/category_biofuel.html">Биотопливо</a>
+					<a href="../../catalog/category_export.html" class="export">Продукция на экспорт</a>
+					<div class="price-list">
+						<a href="../../documents/PRICE-LIST.docx" download>Скачать Прайс-лист</a>
+					</div>
+				</div>
+			</div>
+<!-- ------------------------------------------- COLUMN CONTENT	------------------------------------- -->
+			<div class="content">
+				<div class="row-products">
+					<div class="column product_image">
+						<img src="../../media/products/feed_yeast.jpg"/>
+					</div>
+					<div class="column product_parameters">
+					</div>
+				</div>
+				<div class="product_description">
+					<h2>Дрожжи кормовые</h2>
+					<p> ГОСТ 20083-74.</p>
+					<p> Код ТН ВЭД 21 02 20 1900.</p>
+					<p> Объем производства: 70 тонн в месяц.</p>
+					<p> Дрожжи кормовые используются при производстве комбикормов, а также в качестве добавки 
+						в кормовые рационы сельскохозяйственных животных, птиц и пушных зверей.</p>
+					<p> <b>Качественные характеристики кормовых дрожжей:</b><br>
+						- массовая доля белка по Барнштейну (в пересчете на абсолютно сухое 
+						вещество высшей категории), составляет не менее 32 – 38 %;<br>
+						- золы не более 10%;<br>
+						- массовая доля влаги, не более 10%;<br>
+						- наличие живых клеток продуцента не допускается;<br>
+						- токсичности не допускается;<br>
+						- общая бактериальная обсемененность не более 150 тысяч клеток в 1г дрожжей;<br>
+						- порошок коричневого цвета;<br>
+						- экологически чистый продукт.</p>
+					<p> <b>Упаковка:</b> 3-х слойные бумажные мешки (с клапанами) по 20 кг.</p>
+					<p> <b>Условия хранения:</b> хранить в хорошо проветриваемом помещении, 
+						защищенном от прямых солнечных лучей и атмосферных осадков.</p>
+					<p> <b>Срок хранения:</b> шесть месяцев со дня изготовления.</p>
+					<p> Дрожжи кормовые вырабатываются из технически чистых культур дрожжей, выращенных на 
+						мелассных-зерновых субстратах. Согласно многократным исследованиям и испытаниям, 
+						произведенным Центральной лабораторией комбикормовой промышленности Министерства 
+						сельского хозяйства и продовольствия Республики Беларусь установлено, что дрожжи кормовые 
+						содержат витамины группы "В" и в этом отношении превосходят все белковые корма, 
+						в том числе и рыбную муку.</p>
+					<p> Естественное сочетание в дрожжах полноценных белков и витаминов группы "В" оказывается 
+						очень важным в питании животных и птиц. Витамины группы "В" тесно связаны с белковым обменом 
+						в организме животных, они выступают как компоненты ферментных систем, активные катализаторы, 
+						необходимые для усвоения аминокислот и синтеза белка.</p>
+					<p> В сухом веществе дрожжей содержатся следующие аминокислоты:<br>
+						лейцин – 35,5 г/кг,<br>
+						лизин – 31,5 г/кг,<br>
+						изолейцин – 30,6 г/кг,<br>
+						валин – 26,7г/кг,<br>
+						аланин – 25,8 г/кг,<br>
+						аргинин – 25,6 г/кг,<br>
+						фенилаланин – 19,6 г/кг,<br>
+						треонин – 19,3 г/кг,<br>
+						гистидин – 12,4 г/кг,<br>
+						метионин – 8,1 г/кг.</p>
+					<p> Нормы ввода в комбикорма дрожжей кормовых:<br>
+						- для с/х животных – 0-12%;<br>
+						- для с/х птиц  - 0-5%;<br>
+						- для пушных зверей – 0-15%;<br>
+						- для рыб – 0-10%.</p>
+					<p> Скармливание комбикормов с кормовыми дрожжами обеспечивает хорошее физиологическое состояние 
+						животных, лучшую трансформацию содержащихся в них питательных веществ на продуктивные цели, 
+						выразившиеся в достоверно более высокой интенсивности роста (на 6%), 
+						снижение на 3,5% затрат кормов в расчете на 1 кг прироста живой массы.</p>
+					<p> Максимально допустимые уровни накопленной радиоактивности в виде цезия -134 и -137 
+						регулируются Регламентом Совета Европейских Сообществ № 737/90 от 22 марта 1990 года 
+						(статья 3) – 370 Бк/кг. Фактическое содержание радионуклидов цезия -137 в дрожжах, 
+						производимых ОАО "Бобруйский завод биотехнологий", подтверждается Могилевской областной 
+						ветеринарной лабораторией по каждой поставляемой партии.</p>
+					<p> <b>Условия поставки:</b> ж/д транспортом (в крытых вагонах), самовывоз автомобильным 
+						транспортом в соответствии с правилами транспортировки опасных грузов.</p>
+					<p> Система менеджмента качества разработки и производства дрожжей кормовых 
+						соответствует требованиям СТБ ИСО 9001 – 2001.</p>
+					<p> Система управления окружающей средой производства дрожжей кормовых 
+						соответствует требованиям СТБ ИСО 14001 – 2005.</p>
+				</div>
+			</div>
+		</div>
+<!-- ----------------------------------------------- FOOTER	----------------------------------------- -->
+		<footer>
+			<div class="about-us">
+				<h2 style="text-align:center">О нас</h2>
+				<h3>Производимая продукция</h3>
+				<p> Спирт этиловый, бытовая и автомобильная химия, биотопливо, сорбент, двуокись углерода, 
+					дезинфицирующие средства, биологические консерванты силоса и кормовые добавки, 
+					ветеринарные препараты и биологические средства защиты растений</p>
+			</div>
+			<div class="custom-links">
+				<h2 style="text-align:center">Основные разделы</h2>
+				<a href="../../pages/index.html">Главная</a><br>
+				<a href="../../pages/catalogue.html">Продукция</a><br>
+				<a href="../../pages/about_us.html">О нас</a><br>
+				<a href="../../pages/history.html">История</a><br>
+				<a href="../../pages/reports.html">Отчетность</a><br>
+				<a href="../../pages/news.html">Новости</a><br>
+				<a href="../../pages/contacts.html">Контакты</a><br>
+				<a href="../../pages/minsk_storage.html">Склад в Минске</a><br>
+				<a href="../../pages/phones.html">Телефоны</a><br>
+				<a href="../../pages/reception_schedule.html">График личного приема</a><br>
+				<a href="../../pages/contact_us.html">Связаться с нами</a><br>
+                <a href="../../pages/pharmacovigilance.html">Фармаконадзор</a>
+                <a href="../../pages/order_form.html">Заявка на продукцию</a>
+			</div>
+			<div class="contact-us">
+				<h2 style="text-align:center">Связаться с нами</h2>
+				<h3>Адрес</h3>
+				<p>213800, Беларусь, Могилевская обл., <br>г. Бобруйск, ул. Чехова, д. 54</p>
+				<h3>Телефоны</h3>
+				<p>+375 (225) 71-59-38</p>
+				<p>+375 (225) 71-60-88</p>
+				<h3>Электронная почта</h3>
+				<p>gidroliz@mail.ru</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Бобруйский завод биотехнологий</title>
+		<link rel="icon" href="../media/favicon.png" type="image/png">
+		<link rel="stylesheet" href="../styles/header_footer_style.css">
+		<link rel="stylesheet" href="../styles/navbar_style.css">
+		<link rel="stylesheet" href="../styles/main_style.css">
+		<link rel="stylesheet" href="../styles/index_style.css">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+				integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+				crossorigin="anonymous">
+		</script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<script type="text/javascript" src="../scripts/products-search.js"></script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+				m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+			ym(88219983, "init", {
+				clickmap:true,
+				trackLinks:true,
+				accurateTrackBounce:true,
+				webvisor:true,
+				ecommerce:"dataLayer"
+			});
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/88219983" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+<!-- ------------------------------------------- HEADER	----------------------------------------- -->
+		<header>
+			<div class="logo">
+				<a href="../pages/index.html">
+				<img src="../media/logo.png" style="height:120px; background-size:cover" alt="Бобруйский завод биотехнологий"/></a>
+			</div>
+			<div class="legal-information">
+				<p>213800, Республика Беларусь, Могилевская область, г. Бобруйск, ул. Чехова, 54</p>
+				<p>УНН 700068910, ОКПО 00479190</p>
+				<p><b>Отгрузочные реквизиты:</b></p>
+				<p>станция Бобруйск Бел. ж/д., код станции 147008, код завода 2958</p>
+			</div>
+		</header>
+<!-- ------------------------------------------- NAVBAR	----------------------------------------- -->
+		<div class="navbar" id="nav">
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../pages/index.html';" 
+						class="dropbtn"
+						value="Главная"/>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../pages/catalogue.html';" 
+						class="dropbtn"
+						value="Продукция"/>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../pages/about_us.html';" 
+						class="dropbtn"
+						value="О нас"/>
+				<div class="dropdown-content">
+					<a href="../pages/about_us.html">О предприятии</a>
+					<a href="../pages/history.html">История</a>
+					<a href="../pages/reports.html">Отчетность</a>
+					<a href="../pages/news.html">Новости</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../pages/contacts.html';" 
+						class="dropbtn"
+						value="Контакты"/>
+				<div class="dropdown-content">
+					<a href="../pages/contacts.html">Основная информация</a>
+					<a href="../pages/minsk_storage.html">Склад в Минске</a>
+					<a href="../pages/phones.html">Телефоны</a>
+					<a href="../pages/reception_schedule.html">График личного приема</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../pages/contact_us.html';" 
+						class="dropbtn"
+						value="Связаться с нами"/>
+				<div class="dropdown-content">
+					<a href="../pages/contact_us.html">Отправить сообщение</a>
+					<a href="../pages/order_form.html">Заявка на продукцию</a>
+					<a href="../pages/pharmacovigilance.html">Фармаконадзор</a>
+				</div>
+			</div>
+			<div class="search">
+				<select class="select2-element" id="select2-label-id"></select>
+				<input type="image" 
+						src="../media/magnifying_glass.png" 
+						onclick="openSelected()"
+						class="searchbtn"/>
+			</div>
+		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var navbar = document.getElementById("nav");
+			var sticky = navbar.offsetTop;
+			
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+<!-- ------------------------------------------- HEAD IMAGE	----------------------------------------- -->
+		<div class="header_index">
+			<div class="header_index_text_background">
+				<h1 class="header_index_text">БОБРУЙСКИЙ ЗАВОД БИОТЕХНОЛОГИЙ</h1>
+			</div>
+		</div>
+<!-- -------------------------------------------- CONTEINER	----------------------------------------- -->
+		<div class="container">
+			<div class="row">
+				<div class="column advertised-product">
+					<div class="column product-image">
+						<img src="../media/all_clean_hands.png"/>
+					</div>
+					<div class="column product-description">
+						<h2>Гель для рук "Чистые ручки"</h2>
+						<p> Предназначен для очистки рук без использования воды и применяется после 
+							контакта с деньгами, работы за компьютерами, в местах большого скопления людей.
+							Кроме действующего вещества в состав геля, также входит глицерин, 
+							который увлажняет кожу рук и делает ее мягкой.</p>
+						<button onclick="window.location.href='../catalog/category_antiseptic/clean_hands.html';">Подробнее</button>
+					</div>
+				</div>
+				<div class="column advertised-product">
+					<div class="column product-image">
+						<img src="../media/set_of_krugozor.jpg"/>
+					</div>
+					<div class="column product-description">
+						<h2>Стеклоомыватель "Кругозор"</h2>
+						<p>Чистые стекла Вашего автомобиля - залог безопасности во время движения!
+						<ul>
+							<li>не оставляет потеков, налетов и радужных пленок;
+							<li>нейтрален к лакокрасочному покрытию кузова, резиновым и пластмассовым деталям;
+							<li>смывает остатки химически устойчивой дорожной грязи;
+							<li>безвреден для здоровья водителя и пассажиров, окружающей среды.
+						</ul>
+						<button onclick="window.location.href='../catalog/category_auto_chemicals/krugozor_30.html';">Подробнее</button>
+					</div>
+				</div>
+			</div>
+		<!-- 	<div class="slideshow-container">
+				<div class="slideshow">
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 5</div>
+						<img class="slide_image" src="../media/img1.png">
+						<div class="slideshow-text">
+							<div class="column product-image">
+								<img src="../media/all_clean_hands.png"/>
+							</div>
+							<div class="column product-description">
+								<h2>Гель для рук "Чистые ручки"</h2>
+								<p> Предназначен для очистки рук без использования воды и применяется после 
+									контакта с деньгами, работы за компьютерами, в местах большого скопления людей.
+									Кроме действующего вещества в состав геля, также входит глицерин, 
+									который увлажняет кожу рук и делает ее мягкой.</p>
+								<p><button onclick="window.location.href='../catalog/category_antiseptic/clean_hands.html';">Подробнее</button></p>
+							</div>
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 5</div>
+						<img class="slide_image" src="../media/img1.png">
+						<div class="slideshow-text">
+							<div class="column product-image">
+								<img src="../media/set_of_krugozor.jpg"/>
+							</div>
+							<div class="column product-description">
+								<h2>Стеклоомыватель "Кругозор"</h2>
+								<p>Чистые стекла Вашего автомобиля - залог безопасности во время движения!
+								<ul>
+									<li>не оставляет потеков, налетов и радужных пленок;
+									<li>нейтрален к лакокрасочному покрытию кузова, резиновым и пластмассовым деталям;
+									<li>смывает остатки химически устойчивой дорожной грязи;
+									<li>безвреден для здоровья водителя и пассажиров, окружающей среды.
+								</ul>
+								<p><button onclick="window.location.href='../catalog/category_auto_chemicals/krugozor_30.html';">Подробнее</button></p>
+							</div>
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 5</div>
+						<img class="slide_image" src="../media/img1.png">
+						<div class="slideshow-text">
+							<b>Отпуск</b> геля для рук «Чистые ручки» осуществляется 
+							<b>строго</b> в день, определенный в счете-договоре.
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 5</div>
+						<img class="slide_image" src="../media/img1.png">
+						<div class="slideshow-text">
+							<b>Для получения</b> геля для рук «Чистые ручки» заполните форму и 
+							отправьте <b>за день</b> до даты отгрузки на e-mail – gidroliz@mail.ru
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">5 / 5</div>
+						<img class="slide_image" src="../media/img1.png">
+						<div class="slideshow-text">
+							<b>В случае отсутствия заполненной формы отпуск товара осуществляться не будет!</b>
+						</div>
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<div class="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+				
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";
+					dots[slideIndex-1].className += " active";
+				}
+				
+			/*	var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				    var i;
+				    var slides = document.getElementsByClassName("mySlides");
+				    for (i = 0; i < slides.length; i++) {
+				        slides[i].style.display = "none";
+				    }
+				    slideIndex++;
+				    if (slideIndex > slides.length) {slideIndex = 1}
+				    slides[slideIndex-1].style.display = "block";
+				    setTimeout(showSlides, 3000); // Change image every 3 seconds
+				} */
+			</script> -->
+			<div class="row">
+				<div class="factory">
+					<h3>Производимая продукция</h3>
+					<p> Спирт этиловый, бытовая и автомобильная химия, биотопливо, сорбент, двуокись углерода, 
+						дезинфицирующие средства, биологические консерванты силоса и кормовые добавки, 
+						ветеринарные препараты и биологические средства защиты растений</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column diplom">
+					<div class="column product-image">
+						<img src="../media/diplom2014.jpg"/>
+					</div>
+					<div class="column product-description">
+						<p> Диплом I степени и золотая медаль за высокое качество спирта «Люкс» 
+							Московского международного конкурса спиртов 2014</p>
+					</div>
+				</div>
+				<div class="column diplom">
+					<div class="column product-image">
+						<img src="../media/diplom2015.jpg"/>
+					</div>
+					<div class="column product-description">
+						<p> Диплом I степени и золотая медаль за высокое качество спирта «Люкс» 
+							Московского международного конкурса спиртов 2015</p>
+					</div>
+				</div>
+				<div class="column diplom">
+					<div class="column product-image">
+						<img src="../media/diplom2016.jpg"/>
+					</div>
+					<div class="column product-description">
+						<p> Диплом II степени и серебряная медаль за высокое качество спирта «Люкс» 
+							Московского международного конкурса спиртов 2016</p>
+					</div>
+				</div>
+				<div class="column diplom">
+					<div class="column product-image">
+						<img src="../media/diplom2017.jpg"/>
+					</div>
+					<div class="column product-description">
+						<p> Диплом I степени и золотая медаль за высокое качество спирта «Люкс» 
+							Московского международного конкурса спиртов 2017</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="factory">
+					<p>Для получения геля для рук «Чистые ручки» заполните форму и 
+					отправьте <b>за день до даты отгрузки.</b>
+					Отпуск геля для рук «Чистые ручки» осуществляется 
+					<b>строго</b> в день, определенный в счете-договоре.
+					Просим обращать внимание на срок поставки (пункт 6 договора).<br>
+					<b>В случае отсутствия заполненной формы отпуск товара осуществляться не будет!</b></p>
+					<p style="text-align:right">
+						<button class="activebtn" onclick="window.location.href='../pages/hands_gel_form.html';">Оформить</button>
+					</p>
+				</div>
+			</div>
+		</div>
+<!-- ----------------------------------------------- FOOTER	----------------------------------------- -->
+		<footer>
+			<div class="about-us">
+				<h2 style="text-align:center">О нас</h2>
+				<h3>Производимая продукция</h3>
+				<p> Спирт этиловый, бытовая и автомобильная химия, биотопливо, сорбент, двуокись углерода, 
+					дезинфицирующие средства, биологические консерванты силоса и кормовые добавки, 
+					ветеринарные препараты и биологические средства защиты растений</p>
+			</div>
+			<div class="custom-links">
+				<h2 style="text-align:center">Основные разделы</h2>
+				<a href="../pages/index.html">Главная</a><br>
+				<a href="../pages/catalogue.html">Продукция</a><br>
+				<a href="../pages/about_us.html">О нас</a><br>
+				<a href="../pages/history.html">История</a><br>
+				<a href="../pages/reports.html">Отчетность</a><br>
+				<a href="../pages/news.html">Новости</a><br>
+				<a href="../pages/contacts.html">Контакты</a><br>
+				<a href="../pages/minsk_storage.html">Склад в Минске</a><br>
+				<a href="../pages/phones.html">Телефоны</a><br>
+				<a href="../pages/reception_schedule.html">График личного приема</a><br>
+				<a href="../pages/contact_us.html">Связаться с нами</a><br>
+				<a href="../pages/pharmacovigilance.html">Фармаконадзор</a>
+				<a href="../pages/order_form.html">Заявка на продукцию</a>
+			</div>
+			<div class="contact-us">
+				<h2 style="text-align:center">Связаться с нами</h2>
+				<h3>Адрес</h3>
+				<p>213800, Беларусь, Могилевская обл., <br>г. Бобруйск, ул. Чехова, д. 54</p>
+				<h3>Телефоны</h3>
+				<p>+375 (225) 71-59-38</p>
+				<p>+375 (225) 71-60-88</p>
+				<h3>Электронная почта</h3>
+				<p>gidroliz@mail.ru</p>
+			</div>
+		</footer>
+	</body>
+</html>

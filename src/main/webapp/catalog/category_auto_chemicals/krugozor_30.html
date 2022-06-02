@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Бобруйский завод биотехнологий</title>
+		<link rel="icon" href="../../media/favicon.png" type="image/png">
+		<link rel="stylesheet" href="../../styles/header_footer_style.css">
+		<link rel="stylesheet" href="../../styles/navbar_style.css">
+		<link rel="stylesheet" href="../../styles/main_style.css">
+		<link rel="stylesheet" href="../../styles/category_style.css">
+		<link rel="stylesheet" href="../../styles/product_style.css">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+				integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+				crossorigin="anonymous">
+		</script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../scripts/products-search.js"></script>
+	</head>
+	<body>
+<!-- ------------------------------------------- HEADER	----------------------------------------- -->
+		<header>
+			<div class="logo">
+				<a href="../../pages/index.html">
+				<img src="../../media/logo.png" style="height:120px; background-size:cover"/></a>
+			</div>
+			<div class="legal-information">
+				<p>213800, Республика Беларусь, Могилевская область, г. Бобруйск, ул. Чехова, 54</p>
+				<p>УНН 700068910, ОКПО 00479190</p>
+				<p><b>Отгрузочные реквизиты:</b></p>
+				<p>станция Бобруйск Бел. ж/д., код станции 147008, код завода 2958</p>
+			</div>
+		</header>
+<!-- ------------------------------------------- NAVBAR	----------------------------------------- -->
+		<div class="navbar" id="nav">
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/index.html';" 
+						class="dropbtn"
+						value="Главная"/>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/catalogue.html';" 
+						class="dropbtn"
+						value="Продукция"/>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/about_us.html';" 
+						class="dropbtn"
+						value="О нас"/>
+				<div class="dropdown-content">
+					<a href="../../pages/about_us.html">О предприятии</a>
+					<a href="../../pages/history.html">История</a>
+					<a href="../../pages/reports.html">Отчетность</a>
+					<a href="../../pages/news.html">Новости</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/contacts.html';" 
+						class="dropbtn"
+						value="Контакты"/>
+				<div class="dropdown-content">
+					<a href="../../pages/contacts.html">Основная информация</a>
+					<a href="../../pages/minsk_storage.html">Склад в Минске</a>
+					<a href="../../pages/phones.html">Телефоны</a>
+					<a href="../../pages/reception_schedule.html">График личного приема</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<input type="button" 
+						onclick="window.location.href='../../pages/contact_us.html';" 
+						class="dropbtn"
+						value="Связаться с нами"/>
+				<div class="dropdown-content">
+					<a href="../../pages/contact_us.html">Отправить сообщение</a>
+                    <a href="../../pages/order_form.html">Заявка на продукцию</a>
+                    <a href="../../pages/pharmacovigilance.html">Фармаконадзор</a>
+				</div>
+			</div>
+			<div class="search">
+				<select class="select2-element" id="select2-label-id"></select>
+				<input type="image" 
+						src="../../media/magnifying_glass.png" 
+						onclick="openSelected()"
+						class="searchbtn"/>
+			</div>
+		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var navbar = document.getElementById("nav");
+			var sticky = navbar.offsetTop;
+			
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+<!-- -------------------------------------------- CONTEINER	----------------------------------------- -->
+		<div class="container">
+<!-- ------------------------------------------ COLUMN LEFT-BAR	------------------------------------- -->
+			<div class="side-bar">
+				<div class="column left-bar">
+					<a href="../../catalog/category_ethanol.html">Спирт этиловый</a>
+					<a href="../../catalog/category_disinfectants.html">Средства дезинфицирующие</a>
+					<a href="../../catalog/category_antiseptic.html">Антисептические растворы</a>
+					<a href="../../catalog/category_carbon_dioxide.html">Двуокись углерода</a>
+					<a class="active" href="../../catalog/category_auto_chemicals.html">Автомобильная химия</a>
+					<a href="../../catalog/category_household_chemicals.html">Бытовая химия</a>
+					<a href="../../catalog/category_means_for_ignition.html">Средства для розжига</a>
+					<a href="../../catalog/category_lignin.html">Сорбент лигниновый</a>
+					<a href="../../catalog/category_means_for_plant_protection.html">Средства защиты растений</a>
+					<a href="../../catalog/category_veterinary_drugs.html">Ветеринарные препараты</a>
+					<a href="../../catalog/category_feed_proteins.html">Кормовые белки</a>
+					<a href="../../catalog/category_biofuel.html">Биотопливо</a>
+					<a href="../../catalog/category_export.html" class="export">Продукция на экспорт</a>
+					<div class="price-list">
+						<a href="../../documents/PRICE-LIST.docx" download>Скачать Прайс-лист</a>
+					</div>
+				</div>
+			</div>
+<!-- ------------------------------------------- COLUMN CONTENT	------------------------------------- -->
+			<div class="content">
+				<div class="row-products">
+					<div class="column product_image">
+						<img src="../../media/products/krugozor_30.png"/>
+					</div>
+					<div class="column product_parameters">
+					</div>
+				</div>
+				<div class="product_description">
+					<h2>Стеклоомыватель "Кругозор -30"</h2>
+					<p> СТБ 1460-2004.</p>
+					<p> Чистые стекла Вашего автомобиля - залог безопасности во время движения!</p>
+					<p> Стеклоомыватель "Кругозор" изготавливается в потребительской полимерной таре от 1 до 5 литров.</p>
+					<p> Температура замерзания от минус 10&deg;C до минус 55&deg;С 
+						в зависимости от содержания этанола согласно используемой рецептуре.</p>
+					<p> Предназначен для удаления со стекла и фар автомобиля грязи, пыли, 
+						солевого и дорожного налета, насекомых, наледи.</p>
+					<p> Стеклоомыватель "Кругозор" не содержит метанола. Изготавливается на основе спирта этилового 
+						ректификованного технического с добавлением поверхностно-активных веществ, этиленгликоля, 
+						отдушки парфюмерно-косметической, красителя, денатурирующей добавки и воды.</p>
+					<p> <b>Стеклоомыватель серии "Кругозор" отвечает следующим требованиям:</b><br>
+						- не оставляет потеков, налетов и радужных пленок;<br>
+						- нейтрален к лакокрасочному покрытию кузова, резиновым и пластмассовым деталям;<br>
+						- смывает остатки химически устойчивой дорожной грязи;<br>
+						- безвреден для здоровья водителя и пассажиров, окружающей среды.</p>
+				</div>
+			</div>
+		</div>
+<!-- ----------------------------------------------- FOOTER	----------------------------------------- -->
+		<footer>
+			<div class="about-us">
+				<h2 style="text-align:center">О нас</h2>
+				<h3>Производимая продукция</h3>
+				<p> Спирт этиловый, бытовая и автомобильная химия, биотопливо, сорбент, двуокись углерода, 
+					дезинфицирующие средства, биологические консерванты силоса и кормовые добавки, 
+					ветеринарные препараты и биологические средства защиты растений</p>
+			</div>
+			<div class="custom-links">
+				<h2 style="text-align:center">Основные разделы</h2>
+				<a href="../../pages/index.html">Главная</a><br>
+				<a href="../../pages/catalogue.html">Продукция</a><br>
+				<a href="../../pages/about_us.html">О нас</a><br>
+				<a href="../../pages/history.html">История</a><br>
+				<a href="../../pages/reports.html">Отчетность</a><br>
+				<a href="../../pages/news.html">Новости</a><br>
+				<a href="../../pages/contacts.html">Контакты</a><br>
+				<a href="../../pages/minsk_storage.html">Склад в Минске</a><br>
+				<a href="../../pages/phones.html">Телефоны</a><br>
+				<a href="../../pages/reception_schedule.html">График личного приема</a><br>
+				<a href="../../pages/contact_us.html">Связаться с нами</a><br>
+                <a href="../../pages/pharmacovigilance.html">Фармаконадзор</a>
+                <a href="../../pages/order_form.html">Заявка на продукцию</a>
+			</div>
+			<div class="contact-us">
+				<h2 style="text-align:center">Связаться с нами</h2>
+				<h3>Адрес</h3>
+				<p>213800, Беларусь, Могилевская обл., <br>г. Бобруйск, ул. Чехова, д. 54</p>
+				<h3>Телефоны</h3>
+				<p>+375 (225) 71-59-38</p>
+				<p>+375 (225) 71-60-88</p>
+				<h3>Электронная почта</h3>
+				<p>gidroliz@mail.ru</p>
+			</div>
+		</footer>
+	</body>
+</html>

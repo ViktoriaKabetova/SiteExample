@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@media print, screen and (min-width: 64em)
+.grid-x > .large-6 {
+    width: 50%;
+}
+
+@media print, screen and (min-width: 64em)
+.grid-x > .large-6 {
+    flex-basis: auto;
+}
+
+.column.news-about-factory {
+	margin-top: 6px;
+    padding: 20px;
+	width: 25%;
+}
+
+.column.news-about-factory img {
+	width: 100%;
+}
