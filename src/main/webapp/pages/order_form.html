@@ -111,7 +111,7 @@
 			<div class="content">
 				<h1 style="text-align:center">Заявка на продукцию</h1>
 				<div class="row-order">
-					<form id="order" action="../scripts/order_form.php" method="post">
+					<form id="order" action="ExportExcel()" method="post">
 						<div class="row-order-form">
 							<div class="order-product">
 								<h2>Заказ товара</h2>
@@ -157,6 +157,23 @@
 						</div>
 						<input type="submit" id="send" value="Отправить">
 					</form>
+					<table id="t-order" style="display: none">
+						<tr>
+							<td id="t-date_entry"></td>
+							<td id="t-date_delivery"></td>
+							<td id="t-product"></td>
+							<td id="t-count"></td>
+							<td id="t-comment"></td>
+							<td id="t-organization"></td>
+							<td id="t-object_number"></td>
+							<td id="t-phone"></td>
+							<td id="t-email"></td>
+							<td id="t-area"></td>
+							<td id="t-district"></td>
+							<td id="t-town"></td>
+							<td id="t-address"></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>

@@ -109,7 +109,7 @@
             <div class="content">
                 <h1 style="text-align:center">Заявка на продукцию</h1>
                 <div class="row-order">
-                    <form id="order" action="hello-servlet" method="post">
+                    <form id="order" action="order-servlet" method="post">
                         <div class="row-order-form">
                             <div class="order-product">
                                 <h2>Заказ товара</h2>
@@ -153,7 +153,15 @@
                                 <input type="text" id="address" name="address" placeholder="Адрес..."><br>
                             </div>
                         </div>
-                        <input type="submit" id="send" value="Отправить">
+                        <div class="answer">
+                            <input type="submit" id="send" value="Отправить">
+                            <div class="ok_answer" style="display: none">
+                                Ваша заявка принята!
+                            </div>
+                            <div class="err_answer" style="display: none">
+                                Ошибка отправки!
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
