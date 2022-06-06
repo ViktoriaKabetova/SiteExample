@@ -26,8 +26,13 @@
 
 .column.product_parameters {
 	position: relative;
-	padding: 20px;
+	padding-bottom: 20px;
 	width: 70%;
+}
+
+.column.product_parameters button {
+	position: absolute;
+	bottom: 0;
 }
 
 .product_description {
