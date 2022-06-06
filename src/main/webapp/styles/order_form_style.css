@@ -9,7 +9,7 @@ input[type=text], textarea, .select-product {
 }
 
 input[type=submit] {
-    background-color: #7d7d7d;
+    background-color: red;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -17,7 +17,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: red;
+    background-color: #7d7d7d;
 }
 
 label {
