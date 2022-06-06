@@ -1,10 +1,10 @@
 package group.example;
 
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.ss.usermodel.BorderStyle;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.xssf.usermodel.*;
 
+import java.awt.*;
 import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -44,9 +44,60 @@ public class OrderServlet extends HttpServlet {
         XSSFSheet sheet = book.createSheet("DataSheet");
         XSSFRow row = sheet.createRow(0);
 
+        XSSFCellStyle cellstyle = book.createCellStyle();
+
+        cellstyle.setBorderRight(BorderStyle.THIN);
+        cellstyle.setBorderBottom(BorderStyle.MEDIUM);
+
+        XSSFCell headercell = row.createCell(0);
+        headercell.setCellValue("Дата заявки");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(1);
+        headercell.setCellValue("Дата отгрузки");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(2);
+        headercell.setCellValue("Товар");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(3);
+        headercell.setCellValue("Количество");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(4);
+        headercell.setCellValue("Комментарий");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(5);
+        headercell.setCellValue("Название организации");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(6);
+        headercell.setCellValue("Номер объекта");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(7);
+        headercell.setCellValue("Контактный телефон");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(8);
+        headercell.setCellValue("Электронная почта");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(9);
+        headercell.setCellValue("Область");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(10);
+        headercell.setCellValue("Район");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(11);
+        headercell.setCellValue("Город");
+        headercell.setCellStyle(cellstyle);
+        headercell = row.createCell(12);
+        headercell.setCellValue("Адрес");
+        headercell.setCellStyle(cellstyle);
+
+        row = sheet.createRow(1);
+
+        XSSFCellStyle style = book.createCellStyle();
+        style.setBorderRight(BorderStyle.THIN);
+
         for (int i=0; i<13; i++) {
             XSSFCell cell = row.createCell(i);
             cell.setCellValue(data[i]);
+            cell.setCellStyle(style);
             sheet.autoSizeColumn(i);
         }
 
@@ -70,9 +121,13 @@ public class OrderServlet extends HttpServlet {
 
         XSSFRow row = sheet.createRow(rownum);
 
+        XSSFCellStyle style = book.createCellStyle();
+        style.setBorderRight(BorderStyle.THIN);
+
         for (int i=0; i<13; i++) {
             XSSFCell cell = row.createCell(i);
             cell.setCellValue(data[i]);
+            cell.setCellStyle(style);
             sheet.autoSizeColumn(i);
         }
 

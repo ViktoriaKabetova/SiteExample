@@ -5,7 +5,7 @@
 }
 
 button {
-    background-color: #7d7d7d;
+    background-color: red;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -13,10 +13,10 @@ button {
 }
 
 button:hover {
-    background-color: red;
+    background-color: #7d7d7d;
 }
 
-media screen and (max-width:1700px){.column.category {width: 33%;}}
+@media screen and (max-width:1700px){.column.category {width: 33%;}}
 @media screen and (max-width:1360px){.column.category {width: 50%;}}
 @media screen and (max-width:1050px){.column.category {width: 100%;}}
 @media screen and (max-width:700px){.container {flex-wrap: wrap;}.side-bar {width: 100%;}}

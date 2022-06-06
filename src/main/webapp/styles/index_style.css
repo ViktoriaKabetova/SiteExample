@@ -10,9 +10,7 @@
 	margin: 0;
 }
 
-.activebtn {
-    background-color: red;
-    color: white;
+.orderbtn {
     font-size: 18pt;
     align: left;
 }
@@ -45,16 +43,20 @@
 }
 
 .factory {
+    width: 100%;
     background-image: url("../media/factory.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5%;
     text-align: center;
-    text-shadow: 0 0 5px black, 0 0 30px navy;
     color: white;
     font-size: 28pt;
+}
+
+.background-base {
+    padding: 5%;
+    background-color: rgba(43, 56, 86, 0.5);
 }
 
 @media screen and (max-width:2000px){

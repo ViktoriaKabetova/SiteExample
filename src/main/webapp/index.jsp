@@ -77,7 +77,7 @@
                        value="Связаться с нами"/>
                 <div class="dropdown-content">
                     <a href="../pages/contact_us.html">Отправить сообщение</a>
-                    <a href="../pages/order_form.html">Заявка на продукцию</a>
+                    <a href="../index.jsp">Заявка на продукцию</a>
                     <a href="../pages/pharmacovigilance.html">Фармаконадзор</a>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                 <a href="../pages/reception_schedule.html">График личного приема</a><br>
                 <a href="../pages/contact_us.html">Связаться с нами</a><br>
                 <a href="../pages/pharmacovigilance.html">Фармаконадзор</a>
-                <a href="../pages/order_form.html">Заявка на продукцию</a>
+                <a href="../index.jsp">Заявка на продукцию</a>
             </div>
             <div class="contact-us">
                 <h2 style="text-align:center">Связаться с нами</h2>
